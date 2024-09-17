@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
 :root {
-  --primary-color: #95ff00;
-  --secondary-color: #d98f10;
+  --primary-color: #31ed02;
+  --secondary-color: #ff9100;
   --bg-color: #000000;
-  --text-color: #aeff00;
-  --link-color: #0a9ad8;
-  --hover-color: #ffc800;
-  --title-color: #f3aa98;
-  --border-color: #6cf900;
+  --text-color: #a6ff00;
+  --link-color: #08f2c0;
+  --hover-color: #f68a05e5;
+  --title-color: #03ec0f;
+  --border-color: #27ff2e;
   --nav-bg: rgba(10, 200, 77, 0.1);
 }
 
@@ -65,6 +65,11 @@ h1 {
 h2 {
   color: var(--secondary-color);
   font-size: 1.5rem;
+}
+
+h3 {
+  color: var(--link-color);
+  font-size: 1.25rem;
 }
 
 /* Header and Navigation */
