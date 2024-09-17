@@ -1,14 +1,21 @@
 {{ define "main" }}
-  <div class="home-content">
-    {{ .Content }}
-  </div>
-  <div class="home-page-list">
-    {{ range site.RegularPages }}
-      <article class="home-page-item">
-        <h2 class="home-page-title">
-          <a href="{{ .RelPermalink }}" class="home-page-link">{{ .LinkTitle }}</a>
-        </h2>
-      </article>
-    {{ end }}
+  <div class="container home-content">
+    <div class="row">
+      <div class="col-md-8">
+        {{ .Content }}
+      </div>
+      <div class="col-md-4">
+        <div class="home-page-list">
+          {{ range site.RegularPages }}
+            <article class="home-page-item mb-4">
+              <h2 class="home-page-title">
+                <a href="{{ .RelPermalink }}" class="home-page-link">{{ .LinkTitle }}</a>
+              </h2>
+              <p class="author-name text-muted">by {{ .Site.Author.name }}</p>
+            </article>
+          {{ end }}
+        </div>
+      </div>
+    </div>
   </div>
 {{ end }}
