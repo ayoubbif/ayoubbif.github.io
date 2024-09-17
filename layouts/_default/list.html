@@ -1,0 +1,16 @@
+{{ define "main" }}
+<section class="post-list">
+    <h1>{{ .Title }}</h1>
+    {{ range .Pages }}
+        <article class="post-summary">
+            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+                {{ .Date.Format "January 2, 2006" }}
+            </time>
+            <!-- Adjust the length in truncate to fit the desired number of characters -->
+            <p>{{ .Summary | truncate 150 "..." }}</p>
+            <a href="{{ .Permalink }}" class="read-more">Read More</a>
+        </article>
+    {{ end }}
+</section>
+{{ end }}
