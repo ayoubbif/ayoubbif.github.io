@@ -5,3 +5,8 @@ title = 'vault'
 [author]
 name = "Ayoub Biferdou"
 location = "Agadir"
+
+[markup]
+  [markup.highlight]
+    style = "solarized-dark"
+
