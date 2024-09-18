@@ -241,18 +241,10 @@ article, .post, .post-summary, .post-content {
 
 /* Code Blocks */
 pre, code {
-  background-color: var(--code-bg);  /* Red background for cyberpunk look */
-  color: var(--code-color);          /* Light text color */
-  border: 1px solid var(--primary-color); /* Neon green border */
-  padding: 1rem;
-  border-radius: 4px;
-  font-family: 'Share Tech Mono', monospace;
-  box-shadow: 0 0 15px rgba(54, 242, 7, 0.2); /* Neon-like shadow */
-}
-
-pre.chroma .hl {
-  background-color: var(--hover-color); /* Yellowish color for highlighted lines */
-  color: var(--bg-color);               /* Dark text for contrast */
+  padding: 0.5rem;
+  color: var(--code-color);
+  overflow-x: auto;
+  word-wrap: break-word;
 }
 
 /* Footer */
